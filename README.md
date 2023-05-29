@@ -32,3 +32,9 @@ docker-compose up
 docker-compose -f docker-compose-deploy.yml build
 docker-compose -f docker-compose-deploy.yml up
 ```
+
+## Adding new apps
+
+```
+docker-compose -f docker-compose.yml run --rm app sh -c "python manage.py startapp appname"
+```
